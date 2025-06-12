@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  ai_trading_engine:
+    build: .
+    container_name: ai_trading_engine
+    volumes:
+      - ./app:/app/app
+    restart: always
